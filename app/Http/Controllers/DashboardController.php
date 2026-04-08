@@ -41,7 +41,7 @@ class DashboardController extends Controller
         return view('dashboard', compact('stats', 'recentTransactions'));
     }
 
-    public function analytics()
+        public function analytics()
     {
         $user = Auth::user();
 
@@ -51,16 +51,23 @@ class DashboardController extends Controller
             ->groupBy('type')
             ->get();
 
-        // Data for Monthly Trends (Last 6 Months)
-        // For simplicity in this demo, we'll group by month name
+        // Deteksi jenis database yang sedang digunakan
+        $driver = DB::getDriverName();
+        
+        // Pilihan format bulan berdasarkan database
+        $monthFormat = ($driver == 'sqlite') 
+            ? "strftime('%m', date)" 
+            : "DATE_FORMAT(date, '%m')";
+
+        // Data for Monthly Trends
         $monthlyIncome = Income::where('user_id', $user->id)
-            ->select(DB::raw("strftime('%m', date) as month"), DB::raw('sum(amount) as total'))
+            ->select(DB::raw("$monthFormat as month"), DB::raw('sum(amount) as total'))
             ->groupBy('month')
             ->orderBy('month')
             ->get();
 
         $monthlyExpense = Outcome::where('user_id', $user->id)
-            ->select(DB::raw("strftime('%m', date) as month"), DB::raw('sum(amount) as total'))
+            ->select(DB::raw("$monthFormat as month"), DB::raw('sum(amount) as total'))
             ->groupBy('month')
             ->orderBy('month')
             ->get();
