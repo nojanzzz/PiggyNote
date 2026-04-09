@@ -78,7 +78,7 @@
                         <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
                         <span class="relative inline-flex rounded-full h-2 w-2 bg-pink-500"></span>
                     </span>
-                    <span class="text-[10px] md:text-xs font-bold uppercase tracking-wider">Cerdas Kelola Keuangan</span>
+                    <span class="text-[10px] md:text-xs font-bold uppercase tracking-wider">Cerdas Dalam Mengelola Keuangan</span>
                 </div>
                 
                 <h1 class="text-4xl md:text-7xl font-bold text-gray-900 leading-[1.1]">
@@ -87,7 +87,7 @@
                 </h1>
                 
                 <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-lg mx-auto lg:mx-0">
-                    Lacak setiap sen, visualisasikan pengeluaran, dan capai target tabungan Anda lebih cepat.
+                    Lacak setiap rupiah, visualisasikan pengeluaran, dan capai target tabungan Anda lebih cepat.
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start px-8 sm:px-0">
