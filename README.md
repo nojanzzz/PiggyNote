@@ -1,8 +1,6 @@
 # PiggyNote — The Future of Modern Personal Finance Management
 
-<p align="center">
-  <img src="dashboardview.jpg" width="200" alt="Laravel Logo">
-</p>
+![Banner](dashboardview.jpg)
 
 **PiggyNote** is a premium, full-stack financial management ecosystem designed to empower individuals with deep insights into their financial health. Built with a focus on **visual excellence** and **operational efficiency**, PiggyNote transforms complex transactional data into actionable financial strategies.
 
