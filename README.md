@@ -1,66 +1,127 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# PiggyNote — The Future of Modern Personal Finance Management
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="dashboardview.jpg" width="200" alt="Laravel Logo">
 </p>
 
-## About Laravel
+**PiggyNote** is a premium, full-stack financial management ecosystem designed to empower individuals with deep insights into their financial health. Built with a focus on **visual excellence** and **operational efficiency**, PiggyNote transforms complex transactional data into actionable financial strategies.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 💎 The Business Value
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+In an era of digital transactions, financial literacy is the cornerstone of wealth creation. PiggyNote addresses this by providing:
 
-## Learning Laravel
+- **Data-Driven Decision Making**: High-fidelity visualizations allow users to identify spending leaks and optimize capital allocation.
+- **Enhanced Financial Awareness**: By streamlining the tracking process, PiggyNote reduces the cognitive load of budget management.
+- **Scalable Architecture**: Designed for modularity, making it an ideal foundation for fintech startups or internal corporate expense tracking.
+- **Premium User Experience**: A high-end UI/UX that increases user retention and engagement, critical for B2C financial applications.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## 🚀 Key Features
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 1. Intelligence Dashboard
 
-## Laravel Sponsors
+A centralized hub providing a real-time overview of current balances, recent transactions, and financial progress. The interface is optimized for high-speed data entry and immediate visual feedback.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 2. Advanced Analytics & Visualization
 
-### Premium Partners
+Integrated with **ApexCharts**, PiggyNote offers sophisticated data layers:
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+- **Spending Distribution**: Granular donut charts showing category-wise resource allocation.
+- **Cash Flow Dynamics**: Comparative bar charts for monthly income vs. outcome trends.
+- **Categorical Deep-Dives**: Detailed tabular breakdowns for precise auditing.
 
-## Contributing
+### 3. Adaptive & Responsive Design
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Leveraging a "Mobile-First" philosophy, the platform provides a seamless experience across desktop, tablet, and smartphone devices. The UI adapts dynamically to ensure readability and functionality regardless of the viewport.
 
-## Code of Conduct
+### 4. Enterprise-Grade Security
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Built on the **Laravel Framework**, PiggyNote implements industry-standard security protocols, including CSRF protection, secure password hashing, and session management.
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 🛠️ Technical Stack
 
-## License
+- **Framework**: [Laravel 11](https://laravel.com) (PHP 8.2+)
+- **Frontend**: [Tailwind CSS](https://tailwindcss.com), [Alpine.js](https://alpinejs.dev)
+- **Data Visualization**: [ApexCharts](https://apexcharts.com)
+- **Icons**: [Lucide Icons](https://lucide.dev)
+- **Database**: SQLite (Default) / MySQL Compatible
+- **Typography**: Outfit (via Google Fonts)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+
+## 🔮 Future Scalability & Roadmap
+
+PiggyNote is engineered for growth. The architecture is ready for transition into a comprehensive fintech powerhouse:
+
+### 🤖 AI Integration (Prophet AI)
+
+- **Automated Categorization**: Utilizing NLP/LLMs (e.g., Gemini API) to automatically categorize transactions from descriptions.
+- **Predictive Analytics**: Forecasting future balances based on historical spending patterns.
+- **Financial Advisory**: AI-driven tips to optimize savings and investment strategies.
+
+### 📱 Mobile Ecosystem Expansion
+
+- **Native Experience**: Implementation of **Flutter** or **React Native** to provide a high-performance native mobile experience.
+- **Push Notifications**: Real-time alerts for budget thresholds and scheduled payments.
+
+### 🌐 Fintech Integrations
+
+- **Bank Synchronization**: Integration with Plaid or similar APIs for automated transaction fetching.
+- **Multi-Currency Support**: Real-time exchange rate updates for international users.
+
+---
+
+## ⚙️ Installation
+
+Experience the power of PiggyNote locally:
+
+1. **Clone the Repository**
+
+    ```bash
+    git clone https://github.com/nojanzzz/PiggyNote.git
+    ```
+
+2. **Install Dependencies**
+
+    ```bash
+    composer install
+    npm install && npm run build
+    ```
+
+3. **Environment Setup**
+
+    ```bash
+    cp .env.example .env
+    php artisan key:generate
+    ```
+
+4. **Database Configuration**
+
+    ```bash
+    touch database/database.sqlite
+    php artisan migrate
+    ```
+
+5. **Launch**
+    ```bash
+    php artisan serve
+    ```
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🧑‍💻 Author
+
+**Naufal Auzan R**
+Computer Engineering, Vocational School IPB University
+[Portfolio](your-portfolio-url) | [LinkedIn](your-linkedin-url)
+
+---

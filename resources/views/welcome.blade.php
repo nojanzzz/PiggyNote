@@ -44,11 +44,11 @@
     <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 px-4 py-4 md:px-6">
         <div class="max-w-7xl mx-auto flex items-center justify-between glass px-4 md:px-6 py-3 rounded-2xl shadow-sm">
-            <div class="flex items-center gap-2">
+            <div class="flex items-center gap-1.5 md:gap-2">
                 <div class="bg-pink-500 p-1.5 rounded-xl shadow-lg shadow-pink-200">
-                    <i data-lucide="piggy-bank" class="text-white w-5 h-5"></i>
+                    <i data-lucide="piggy-bank" class="text-white w-4 h-4 md:w-5 md:h-5"></i>
                 </div>
-                <span class="text-lg md:text-xl font-bold text-gray-800">Piggy<span class="text-pink-600">Note</span></span>
+                <span class="text-lg md:text-xl font-bold text-gray-800 tracking-tight">Piggy<span class="text-pink-600">Note</span></span>
             </div>
             
             <div class="hidden lg:flex items-center gap-8 text-gray-600 font-medium">
@@ -56,52 +56,51 @@
                 <a href="#" class="hover:text-pink-600 transition-colors">Analytics</a>
             </div>
 
-            <div class="flex items-center gap-3">
+            <div class="flex items-center gap-2 md:gap-4">
                 @if (Route::has('login'))
                     @auth
-                        <a href="{{ url('/dashboard') }}" class="px-4 py-2 bg-pink-600 text-white rounded-xl font-bold text-sm shadow-lg shadow-pink-200">Dashboard</a>
+                        <a href="{{ url('/dashboard') }}" class="px-3 md:px-5 py-2 bg-pink-600 text-white rounded-xl font-bold text-xs md:text-sm shadow-lg shadow-pink-200 hover:bg-pink-700 transition-colors">Dashboard</a>
                     @else
-                        <a href="{{ route('login') }}" class="text-gray-600 font-bold text-sm px-2 hover:text-pink-600">Login</a>
-                        <a href="{{ route('register') }}" class="px-4 py-2 bg-pink-600 text-white rounded-xl font-bold text-sm shadow-lg shadow-pink-200">Join</a>
+                        <a href="{{ route('login') }}" class="text-gray-600 font-bold text-xs md:text-sm px-1 md:px-2 hover:text-pink-600 transition-colors">Login</a>
+                        <a href="{{ route('register') }}" class="px-3 md:px-5 py-2 bg-pink-600 text-white rounded-xl font-bold text-xs md:text-sm shadow-lg shadow-pink-200 hover:bg-pink-700 transition-colors">Join</a>
                     @endauth
                 @endif
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="pt-32 md:pt-48 pb-20 px-6">
-        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6 md:space-y-8 text-center lg:text-left">
-                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pink-100 text-pink-700 border border-pink-200 shadow-sm mx-auto lg:mx-0">
+    <header class="pt-24 md:pt-40 pb-16 md:pb-32 px-4 md:px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div class="space-y-6 md:space-y-10 text-center md:text-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-pink-100/80 text-pink-700 border border-pink-200 shadow-sm mx-auto md:mx-0">
                     <span class="relative flex h-2 w-2">
                         <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
                         <span class="relative inline-flex rounded-full h-2 w-2 bg-pink-500"></span>
                     </span>
-                    <span class="text-[10px] md:text-xs font-bold uppercase tracking-wider">Cerdas Dalam Mengelola Keuangan</span>
+                    <span class="text-[9px] md:text-xs font-bold uppercase tracking-wider">Cerdas Dalam Mengelola Keuangan</span>
                 </div>
                 
-                <h1 class="text-4xl md:text-7xl font-bold text-gray-900 leading-[1.1]">
-                    Kelola Uang <br class="hidden md:block"/>
+                <h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold text-gray-900 leading-[1.15] tracking-tight">
+                    Kelola Uang <br class="hidden sm:block"/>
                     <span class="text-gradient">Lebih Cerdas.</span>
                 </h1>
                 
-                <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-lg mx-auto lg:mx-0">
+                <p class="text-base md:text-lg lg:text-xl text-gray-600 leading-relaxed max-w-lg mx-auto md:mx-0">
                     Lacak setiap rupiah, visualisasikan pengeluaran, dan capai target tabungan Anda lebih cepat.
                 </p>
 
-                <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start px-8 sm:px-0">
+                <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center md:justify-start px-4 sm:px-0">
                     @auth
-                        <a href="{{ route('dashboard') }}" class="px-8 py-4 bg-gray-900 text-white rounded-2xl font-bold text-lg shadow-xl hover:bg-black transition-all flex items-center justify-center gap-2 group">
+                        <a href="{{ route('dashboard') }}" class="px-6 md:px-8 py-3.5 md:py-4 bg-gray-900 text-white rounded-2xl font-bold text-base md:text-lg shadow-xl hover:bg-black hover:scale-[1.02] transition-all flex items-center justify-center gap-2 group">
                             Ke Dashboard
                             <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
                         </a>
                     @else
-                        <a href="{{ route('register') }}" class="px-8 py-4 bg-gray-900 text-white rounded-2xl font-bold text-lg shadow-xl hover:bg-black transition-all flex items-center justify-center gap-2 group">
+                        <a href="{{ route('register') }}" class="px-6 md:px-8 py-3.5 md:py-4 bg-gray-900 text-white rounded-2xl font-bold text-base md:text-lg shadow-xl hover:bg-black hover:scale-[1.02] transition-all flex items-center justify-center gap-2 group">
                             Mulai Sekarang
                             <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
                         </a>
-                        <a href="{{ route('login') }}" class="px-8 py-4 bg-white text-gray-800 border border-gray-200 rounded-2xl font-bold text-lg shadow-md hover:bg-gray-50 transition-all flex items-center justify-center gap-2">
+                        <a href="{{ route('login') }}" class="px-6 md:px-8 py-3.5 md:py-4 bg-white text-gray-800 border border-gray-200 rounded-2xl font-bold text-base md:text-lg shadow-md hover:bg-gray-50 transition-all flex items-center justify-center gap-2">
                             Masuk
                             <i data-lucide="log-in" class="w-5 h-5 text-pink-500"></i>
                         </a>
@@ -110,19 +109,19 @@
             </div>
 
             <!-- Preview Card (Responsive Floating) -->
-            <div class="relative hidden sm:block mt-20 lg:mt-0">
+            <div class="relative hidden md:block mt-12 md:mt-0">
                 <div class="relative z-10 floating">
-                    <div class="glass p-6 md:p-8 rounded-[40px] shadow-2xl border border-white/50 bg-white/40 max-w-lg mx-auto">
-                        <div class="flex items-center justify-between mb-8">
+                    <div class="glass p-5 md:p-8 rounded-[30px] md:rounded-[40px] shadow-2xl border border-white/50 bg-white/40 max-w-sm lg:max-w-lg mx-auto">
+                        <div class="flex items-center justify-between mb-6 md:mb-8">
                             <div class="text-left">
-                                <h3 class="text-sm md:text-lg font-bold text-gray-800 uppercase tracking-widest opacity-50">Saldo Bulanan</h3>
-                                <p class="text-2xl md:text-4xl font-bold text-pink-600">Rp 12.450.000</p>
+                                <h3 class="text-xs md:text-lg font-bold text-gray-800 uppercase tracking-widest opacity-50">Saldo Bulanan</h3>
+                                <p class="text-xl md:text-4xl font-bold text-pink-600">Rp 12.450.000</p>
                             </div>
-                            <div class="p-3 md:p-4 bg-pink-500/10 rounded-2xl text-pink-600">
-                                <i data-lucide="trending-up" class="w-6 h-6 md:w-8 md:h-8"></i>
+                            <div class="p-2 md:p-4 bg-pink-500/10 rounded-xl md:rounded-2xl text-pink-600">
+                                <i data-lucide="trending-up" class="w-5 h-5 md:w-8 md:h-8"></i>
                             </div>
                         </div>
-                        <div class="h-32 md:h-48 w-full bg-gradient-premium rounded-3xl flex items-end justify-between p-4 gap-2 mb-6 overflow-hidden">
+                        <div class="h-24 md:h-48 w-full bg-gradient-premium rounded-2xl md:rounded-3xl flex items-end justify-between p-3 md:p-4 gap-2 mb-4 md:mb-6 overflow-hidden">
                              <div class="w-full bg-pink-400 h-1/2 rounded-t-lg opacity-40"></div>
                              <div class="w-full bg-pink-500 h-3/4 rounded-t-lg opacity-60"></div>
                              <div class="w-full bg-pink-600 h-full rounded-t-lg"></div>
@@ -143,18 +142,18 @@
                 <h3 class="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">Kendali penuh atas finansial Anda</h3>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                <div class="p-8 rounded-[40px] border border-gray-100 hover:bg-pink-50/30 transition-all text-left">
-                    <div class="w-12 h-12 bg-pink-100 rounded-2xl flex items-center justify-center mb-6 text-pink-600"><i data-lucide="zap" class="w-6 h-6"></i></div>
+                <div class="p-6 md:p-8 rounded-[32px] md:rounded-[40px] border border-gray-100 hover:bg-pink-50/30 transition-all text-left group">
+                    <div class="w-12 h-12 bg-pink-100 rounded-2xl flex items-center justify-center mb-6 text-pink-600 group-hover:scale-110 transition-transform"><i data-lucide="zap" class="w-6 h-6"></i></div>
                     <h4 class="text-xl font-bold text-gray-900 mb-2">Instan</h4>
                     <p class="text-gray-500 text-sm leading-relaxed">Catat transaksi hanya dalam hitungan detik dengan interface yang intuitif.</p>
                 </div>
-                <div class="p-8 rounded-[40px] border border-gray-100 hover:bg-purple-50/30 transition-all text-left">
-                    <div class="w-12 h-12 bg-purple-100 rounded-2xl flex items-center justify-center mb-6 text-purple-600"><i data-lucide="pie-chart" class="w-6 h-6"></i></div>
+                <div class="p-6 md:p-8 rounded-[32px] md:rounded-[40px] border border-gray-100 hover:bg-purple-50/30 transition-all text-left group">
+                    <div class="w-12 h-12 bg-purple-100 rounded-2xl flex items-center justify-center mb-6 text-purple-600 group-hover:scale-110 transition-transform"><i data-lucide="pie-chart" class="w-6 h-6"></i></div>
                     <h4 class="text-xl font-bold text-gray-900 mb-2">Visual</h4>
                     <p class="text-gray-500 text-sm leading-relaxed">Grafik distribusi pengeluaran yang memudahkan Anda melakukan evaluasi.</p>
                 </div>
-                <div class="p-8 rounded-[40px] border border-gray-100 hover:bg-blue-50/30 transition-all text-left md:col-span-2 lg:col-span-1">
-                    <div class="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 text-blue-600"><i data-lucide="shield-check" class="w-6 h-6"></i></div>
+                <div class="p-6 md:p-8 rounded-[32px] md:rounded-[40px] border border-gray-100 hover:bg-blue-50/30 transition-all text-left md:col-span-2 lg:col-span-1 group">
+                    <div class="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 text-blue-600 group-hover:scale-110 transition-transform"><i data-lucide="shield-check" class="w-6 h-6"></i></div>
                     <h4 class="text-xl font-bold text-gray-900 mb-2">Aman</h4>
                     <p class="text-gray-500 text-sm leading-relaxed">Data Anda disimpan secara lokal dan terenkripsi untuk keamanan maksimal.</p>
                 </div>
